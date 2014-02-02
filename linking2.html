@@ -1,0 +1,51 @@
+<!doctype html>
+ <html>
+            <head>
+            <script type="text/javascript">
+            function loadFrame()
+            {
+            var s=document.getElementById("platform").value;
+
+            document.getElementById("loadContainer").innerHTML=""
+            var iframe = document.createElement("iframe");
+            iframe.src = s;
+            document.getElementById("loadContainer").appendChild(iframe);
+            }
+            </script>
+			<link type="text/css" rel="stylesheet" href="linking.css"/>
+			<meta charset="utf-8">
+            </head>
+            <body>
+			<div>
+			<table align="center"><tr>
+			<td><div style="float:left;"align="center">
+			<a href="home.html"title="Return Home"target="main">
+			Home</a></div></td>
+            <td><div style="float:left;"><a title="Search Products">
+            <form>
+                <select id='platform' onchange="loadFrame()">
+				<option selected="true" style="display:none;">Products</option>
+                    <option value="item1.html"target="main">item1</option>
+                    <option value="item2.html"target="main">item2</option>
+                    <option value="item3.html"target="main">item3</option>
+					<option value="item4.html"target="main">item4</option>
+					<option value="item5.html"target="main">item5</option>
+					<option value="item6.html"target="main">item6</option>
+                </select>
+            </form></a>
+            </div></td>
+			<td><div style="float:left;"align="center">
+			<a href=""title="Find out Latest News and Updates"target="main">News and Updates</a>
+			</div></td>
+			<td><div style="float:left;"align="center">
+			<a href=""title="Contact Info"target="main">Contact Info
+			</a></div></td>
+			<td><div><a <a href=""title=""target="main">
+			Compare and Contrast</a>
+			</div></td>
+			
+			</tr></table></div>
+			<br/><br/><br/>
+            <div target="main"id="loadContainer" style="float:right"></div>
+            </body>
+            </html>
